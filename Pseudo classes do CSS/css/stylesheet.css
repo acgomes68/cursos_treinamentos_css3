@@ -1,0 +1,74 @@
+.comBorda {
+	border: 1px solid #000;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+p {
+	font: 14px/22px "Helvetica Neue", arial, sans-serif;
+}
+
+p.type:first-of-type {
+	font-style: italic;
+}
+
+p.type:last-of-type {
+	font-weight: bold;
+}
+
+p.type:nth-of-type(2) {
+	color: blue;
+}
+
+tr:nth-of-type(2n+1) {
+	background: #eee;
+}
+
+table {
+	border-spacing: 0;
+}
+
+input:disabled,
+input:read-only {
+	background: #eee;
+	border: 1px solid #222;
+	cursor: not-allowed;
+}
+
+input:checked + label {
+	color: green;
+}
+
+input:disabled {
+	border: 1px solid red;
+}
+
+input:not(:disabled) {
+	border: 1px solid green;
+}
+
+p.odd:nth-last-child(odd) {
+	background: #eee;
+}
+
+p.odd:nth-child(odd) {
+	background: #ddd;
+}
+
+p.even:nth-last-child(even) {
+	background: #eee;
+}
+
+p.even:nth-child(even) {
+	background: #ddd;
+}
+
+p.nth:nth-of-type(-n+2) {
+	background: #ccc;
+}
+
+p.nth:nth-last-of-type(-n+2) {
+	background: #bbb;
+}
